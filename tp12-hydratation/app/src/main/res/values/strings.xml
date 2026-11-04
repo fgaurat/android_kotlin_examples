@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Hydratation</string>
+
+    <!-- Canal (visible dans Réglages > Applications > Hydratation > Notifications) -->
+    <string name="canal_rappels_nom">Rappels</string>
+    <string name="canal_rappels_description">Rappels réguliers de boire un verre d\'eau, entre 8 h et 22 h.</string>
+
+    <!-- Notification -->
+    <string name="rappel_titre">C\'est l\'heure de boire</string>
+    <string name="rappel_texte">Pensez à boire un verre d\'eau 💧</string>
+    <string name="rappel_texte_long">Pensez à boire un verre d\'eau 💧\nUn verre par heure aide à rester concentré et en forme. Appuyez sur « C\'est fait » une fois votre verre bu.</string>
+    <string name="action_cest_fait">C\'est fait</string>
+
+    <!-- Écran -->
+    <string name="bandeau_mode_avion">✈ Mode avion activé</string>
+    <string name="compteur_titre">Verres bus aujourd\'hui</string>
+    <string name="ajouter_verre">+1 verre</string>
+    <string name="remettre_a_zero">Remettre à zéro</string>
+    <string name="rappels_actives">Rappels activés</string>
+    <string name="rappels_explication">Une notification par heure, jamais entre 22 h et 8 h.</string>
+    <string name="tester_maintenant">Tester maintenant</string>
+    <string name="notifications_bloquees">Les notifications sont bloquées pour Hydratation : aucun rappel ne s\'affichera.</string>
+    <string name="ouvrir_reglages">Ouvrir les réglages de notification</string>
+
+    <string name="permission_titre">Autoriser les notifications</string>
+    <string name="permission_explication">Hydratation a besoin d\'afficher des notifications pour vous rappeler de boire. Rien d\'autre ne sera envoyé.</string>
+    <string name="continuer">Continuer</string>
+    <string name="non_merci">Non merci</string>
+
+    <!-- État WorkManager -->
+    <string name="travail_aucun">Aucun rappel planifié</string>
+    <string name="travail_planifie">Rappel planifié</string>
+    <string name="travail_en_cours">Rappel en cours d\'exécution</string>
+    <string name="travail_annule">Rappels annulés</string>
+    <string name="travail_prochain">%1$s (prochaine exécution vers %2$s)</string>
+</resources>

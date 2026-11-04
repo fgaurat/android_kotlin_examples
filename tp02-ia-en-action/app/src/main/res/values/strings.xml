@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IaEnAction</string>
+    <string name="titre_todos">Mes tâches (données fictives)</string>
+    <string name="todo_details">Tâche n° %1$s · utilisateur %2$d</string>
+    <string name="titre_todo_distant">Tâche distante : GET /todos/1 (JSONPlaceholder)</string>
+    <string name="todo_inactif">Appuyez sur le bouton pour lancer la requête HTTP.</string>
+    <string name="todo_erreur">Erreur : %1$s</string>
+    <string name="bouton_charger">Charger /todos/1</string>
+    <string name="bouton_plantage">Provoquer un plantage</string>
+    <string name="avertissement_plantage">⚠️ Plantage volontaire (étape 4) : ce bouton lève IllegalStateException(\"test\") pour tester « Ask Gemini » dans Logcat. L\'application se ferme.</string>
+</resources>

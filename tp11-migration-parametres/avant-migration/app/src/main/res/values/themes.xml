@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- AVANT MIGRATION : thème Material Components (Material 3), requis par MaterialSwitch
+         et par ?attr/textAppearanceTitleMedium -->
+    <style name="Theme.Parametres" parent="Theme.Material3.DayNight.NoActionBar" />
+</resources>

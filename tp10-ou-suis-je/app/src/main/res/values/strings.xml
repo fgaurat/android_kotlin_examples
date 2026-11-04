@@ -1,0 +1,39 @@
+<resources>
+    <!-- app_name est généré par resValue dans chaque flavor (app/build.gradle.kts) :
+         ne pas le redéclarer ici, sinon doublon de ressource. -->
+
+    <string name="bouton_localiser">Où suis-je ?</string>
+    <string name="permission_titre">Accès à la position</string>
+    <string name="permission_explication">« Où suis-je ? » utilise votre position uniquement pour l\'afficher et calculer la distance jusqu\'à Paris. Elle n\'est ni stockée ni transmise. La position approximative suffit.</string>
+    <string name="permission_continuer">Continuer</string>
+    <string name="permission_non_merci">Non merci</string>
+    <string name="permission_refus_definitif">La position est désactivée pour cette application. Vous pouvez l\'autoriser dans les paramètres.</string>
+    <string name="ouvrir_parametres">Ouvrir les paramètres</string>
+    <string name="etat_permission_aucune">Position non autorisée</string>
+    <string name="etat_permission_approximative">Position approximative autorisée</string>
+    <string name="etat_permission_precise">Position précise autorisée</string>
+    <string name="passer_en_precise">Autoriser la position précise</string>
+
+    <string name="recherche_position">Recherche de la position…</string>
+    <string name="aucune_position">Appuyez sur « Où suis-je ? » pour afficher votre position.</string>
+    <string name="libelle_latitude">Latitude</string>
+    <string name="libelle_longitude">Longitude</string>
+    <string name="libelle_precision">Précision</string>
+    <string name="libelle_distance_paris">Distance jusqu\'à Paris</string>
+    <string name="badge_approximative">Position approximative : distance arrondie au kilomètre</string>
+    <string name="origine_ponctuelle">Position ponctuelle</string>
+    <string name="origine_suivi">Suivi continu en cours</string>
+    <string name="origine_ville">Ville choisie : %1$s</string>
+
+    <string name="erreur_localisation_desactivee">Position indisponible : activez la localisation de l\'appareil.</string>
+    <string name="erreur_permission_retiree">La permission a été retirée entre-temps.</string>
+    <string name="erreur_echec">Impossible d\'obtenir la position.</string>
+    <string name="ouvrir_reglages_localisation">Réglages de localisation</string>
+
+    <string name="suivi_titre">Suivi continu</string>
+    <string name="suivi_demarrer">Démarrer le suivi</string>
+    <string name="suivi_arreter">Arrêter le suivi</string>
+
+    <string name="mode_degrade_titre">Sans position ? Choisissez une ville</string>
+    <string name="environnement">Environnement : %1$s</string>
+</resources>

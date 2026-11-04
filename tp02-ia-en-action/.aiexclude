@@ -1,0 +1,25 @@
+# .aiexclude — fichiers que Gemini in Android Studio ne doit JAMAIS lire ni envoyer.
+# Même syntaxe que .gitignore. Placé à la racine du projet, il s'applique à tout le projet ;
+# un .aiexclude dans un sous-dossier s'applique à ce sous-dossier.
+
+# Chemin du SDK local, parfois des identifiants (propriétés personnelles)
+local.properties
+
+# Clés d'API et secrets (plugin Secrets Gradle, fichiers d'environnement)
+secrets.properties
+secrets.defaults.properties
+*.env
+.env*
+
+# Signature de l'application : keystores et mots de passe associés
+*.jks
+*.keystore
+keystore.properties
+**/keystore/**
+
+# Fichiers de configuration Firebase / Google Cloud contenant des identifiants
+google-services.json
+**/service-account*.json
+
+# Exemple : un module métier confidentiel (adapter au projet)
+app/src/main/java/fr/formation/iaenaction/confidentiel/

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Paramètres</string>
+    <string name="unite_temperature">Unité de température</string>
+    <string name="celsius">Celsius (°C)</string>
+    <string name="fahrenheit">Fahrenheit (°F)</string>
+    <string name="theme_sombre">Thème sombre</string>
+</resources>

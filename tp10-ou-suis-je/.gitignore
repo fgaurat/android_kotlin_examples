@@ -1,0 +1,24 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# --- Secrets de signature (TP10, étape 7) ---
+# local.properties (ci-dessus) contient les mots de passe : jamais versionné.
+# Les vrais keystores ne doivent jamais être versionnés :
+*.jks
+*.keystore
+*.p12
+# Exception : keystore de DÉMONSTRATION fourni pour la formation (mots de passe publics)
+!keystore/upload-demo.jks

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Tâches</string>
+    <string name="titre_ecran">Mes tâches</string>
+    <string name="filtre_toutes">Toutes</string>
+    <string name="filtre_a_faire">À faire</string>
+    <string name="filtre_faites">Faites</string>
+    <string name="priorite_basse">Basse</string>
+    <string name="priorite_normale">Normale</string>
+    <string name="priorite_haute">Haute</string>
+    <string name="rechercher_tache">Rechercher une tâche</string>
+    <string name="nouvelle_tache">Nouvelle tâche</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="supprimer_tache">Supprimer « %1$s »</string>
+    <string name="aucune_tache">Aucune tâche</string>
+    <string name="aucun_resultat">Aucune tâche ne contient « %1$s »</string>
+    <plurals name="taches_restantes">
+        <item quantity="one">%1$d tâche restante</item>
+        <item quantity="other">%1$d tâches restantes</item>
+    </plurals>
+</resources>

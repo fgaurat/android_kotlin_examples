@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Textes par défaut (anglais) : values/ doit contenir TOUTES les chaînes, c'est le repli. -->
+<resources>
+    <string name="app_name">Product sheet</string>
+
+    <!-- Onglets de la navigation principale (courts : 12 caractères max.) -->
+    <string name="onglet_accueil">Home</string>
+    <string name="onglet_recherche">Search</string>
+    <string name="onglet_panier">Cart</string>
+    <string name="onglet_profil">Profile</string>
+    <!-- Lu par TalkBack sur l'onglet Panier quand le badge est visible : libellé, nombre d'articles -->
+    <string name="onglet_avec_badge" translatable="false">%1$s, %2$s</string>
+    <plurals name="articles_panier">
+        <item quantity="one">%d item in cart</item>
+        <item quantity="other">%d items in cart</item>
+    </plurals>
+
+    <!-- Barre du haut -->
+    <string name="retour">Back</string>
+    <string name="partager">Share</string>
+    <!-- Titre du sélecteur d'applications Android -->
+    <string name="partager_via">Share via</string>
+    <!-- Texte partagé : nom du produit, prix formaté -->
+    <string name="texte_partage">Check this out: %1$s for %2$s</string>
+
+    <!-- Fiche -->
+    <!-- Description de la photo : nom du produit, nom du coloris -->
+    <string name="photo_produit">Photo of %1$s in %2$s</string>
+    <string name="prix_barre_description">Was %1$s</string>
+    <!-- Note : valeur formatée (4.5), puis nombre d'avis (« 128 reviews ») -->
+    <string name="note_description">Rated %1$s out of 5, %2$s</string>
+    <string name="aucun_avis">No reviews yet</string>
+    <plurals name="nb_avis">
+        <item quantity="one">%d review</item>
+        <item quantity="other">%d reviews</item>
+    </plurals>
+    <string name="taille">Size</string>
+    <string name="taille_choisie">Size: %1$s</string>
+    <string name="choisir_taille">Select a size</string>
+    <string name="taille_epuisee">%1$s out of stock</string>
+    <string name="couleur_choisie">Colour: %1$s</string>
+    <string name="couleur_bleu_marine">Navy</string>
+    <string name="couleur_blanc_casse">Off-white</string>
+    <string name="couleur_vert_sauge">Sage green</string>
+    <string name="couleur_terracotta">Terracotta</string>
+    <string name="description">Description</string>
+    <!-- Actions annoncées par TalkBack sur l'en-tête de la description -->
+    <string name="deplier">expand</string>
+    <string name="replier">collapse</string>
+    <string name="etat_deplie">Expanded</string>
+    <string name="etat_replie">Collapsed</string>
+    <!-- Bouton principal (verbe d'action) -->
+    <string name="ajouter_au_panier">Add to cart</string>
+    <string name="ajoute_au_panier">%1$s (size %2$s) added to your cart</string>
+    <string name="voir_panier">View cart</string>
+
+    <!-- Panier -->
+    <string name="panier_vide">Your cart is empty. Find a product you\'ll love on the Home tab.</string>
+    <string name="details_ligne">Size %1$s · %2$s</string>
+    <string name="quantite_description">Quantity: %1$d</string>
+    <string name="diminuer_quantite">Decrease quantity of %1$s</string>
+    <string name="augmenter_quantite">Increase quantity of %1$s</string>
+    <string name="total">Total: %1$s</string>
+    <!-- Bouton : passer la commande -->
+    <string name="commander">Checkout</string>
+    <string name="commande_simulee">Thank you! Your order has been placed (demo).</string>
+
+    <string name="a_venir">This section isn\'t available yet.</string>
+</resources>

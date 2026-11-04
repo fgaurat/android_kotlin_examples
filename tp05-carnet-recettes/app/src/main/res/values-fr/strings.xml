@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Traduction française : mêmes clés que values/, placeholders inchangés, apostrophes échappées. -->
+<resources>
+    <string name="app_name">Carnet de recettes</string>
+
+    <string name="categorie_entree">Entrée</string>
+    <string name="categorie_plat">Plat</string>
+    <string name="categorie_dessert">Dessert</string>
+
+    <string name="rechercher_recette">Rechercher une recette</string>
+    <string name="effacer_recherche">Effacer la recherche</string>
+    <string name="aucune_recette">Aucune recette ne correspond à votre recherche.</string>
+    <string name="ajouter_recette">Ajouter une recette</string>
+    <string name="favori">Favori</string>
+    <!-- En français, « one » couvre 0 et 1 ; « many » sert aux grands nombres (1 000 000 de…) -->
+    <plurals name="nb_recettes">
+        <item quantity="one">%d recette</item>
+        <item quantity="many">%d de recettes</item>
+        <item quantity="other">%d recettes</item>
+    </plurals>
+    <plurals name="nb_ingredients">
+        <item quantity="one">%d ingrédient</item>
+        <item quantity="many">%d d\'ingrédients</item>
+        <item quantity="other">%d ingrédients</item>
+    </plurals>
+
+    <string name="duree_minutes">%1$d min</string>
+    <string name="duree_heures">%1$d h</string>
+    <string name="duree_heures_minutes">%1$d h %2$02d</string>
+
+    <string name="retour">Retour</string>
+    <string name="choisir_recette">Sélectionnez une recette pour afficher ses ingrédients et ses étapes.</string>
+    <string name="ingredients">Ingrédients</string>
+    <string name="etapes">Étapes</string>
+    <string name="afficher_etapes">Afficher</string>
+    <string name="masquer_etapes">Masquer</string>
+    <string name="etape_description">Étape %1$d : %2$s</string>
+    <string name="aucun_ingredient">Aucun ingrédient renseigné.</string>
+    <string name="aucune_etape">Aucune étape renseignée.</string>
+    <string name="difficulte_valeur">Difficulté : %1$d/5 (%2$s)</string>
+    <string-array name="niveaux_difficulte">
+        <item>très facile</item>
+        <item>facile</item>
+        <item>moyenne</item>
+        <item>difficile</item>
+        <item>expert</item>
+    </string-array>
+
+    <string name="titre_ajout">Nouvelle recette</string>
+    <string name="nom_recette">Nom de la recette</string>
+    <string name="champ_obligatoire">* Obligatoire</string>
+    <string name="erreur_nom_obligatoire">Le nom ne peut pas être vide</string>
+    <string name="erreur_nom_trop_long">%1$d caractères maximum</string>
+    <string name="duree">Durée</string>
+    <string name="unite_minutes">min</string>
+    <string name="aide_duree">* Obligatoire, en minutes (de 1 à %1$d)</string>
+    <string name="erreur_duree_non_numerique">Saisissez un nombre entier de minutes</string>
+    <string name="erreur_duree_hors_limites">Entre 1 et %1$d minutes</string>
+    <string name="categorie">Catégorie</string>
+    <string name="ingredients_saisie">Ingrédients (un par ligne)</string>
+    <string name="etapes_saisie">Étapes (une par ligne)</string>
+    <string name="enregistrer">Enregistrer</string>
+</resources>

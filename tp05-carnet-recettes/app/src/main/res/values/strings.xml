@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Textes par défaut (anglais) : values/ doit contenir TOUTES les chaînes, c'est le repli. -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Recipe book</string>
+
+    <!-- Catégories de recettes -->
+    <string name="categorie_entree">Starter</string>
+    <string name="categorie_plat">Main course</string>
+    <string name="categorie_dessert">Dessert</string>
+
+    <!-- Liste -->
+    <string name="rechercher_recette">Search recipes</string>
+    <string name="effacer_recherche">Clear search</string>
+    <string name="aucune_recette">No recipe matches your search.</string>
+    <string name="ajouter_recette">Add a recipe</string>
+    <string name="favori">Favourite</string>
+    <!-- Résumé d'une carte : catégorie · durée · nombre d'ingrédients -->
+    <string name="resume_recette" translatable="false">%1$s · %2$s · %3$s</string>
+    <plurals name="nb_recettes">
+        <item quantity="one">%d recipe</item>
+        <item quantity="other">%d recipes</item>
+    </plurals>
+    <plurals name="nb_ingredients">
+        <item quantity="one">%d ingredient</item>
+        <item quantity="other">%d ingredients</item>
+    </plurals>
+
+    <!-- Durées -->
+    <string name="duree_minutes">%1$d min</string>
+    <string name="duree_heures">%1$d h</string>
+    <string name="duree_heures_minutes">%1$d h %2$02d</string>
+
+    <!-- Détail -->
+    <string name="retour">Back</string>
+    <string name="choisir_recette">Select a recipe to see its ingredients and steps.</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="etapes">Steps</string>
+    <string name="afficher_etapes">Show</string>
+    <string name="masquer_etapes">Hide</string>
+    <!-- Lu par TalkBack pour chaque étape : numéro, texte -->
+    <string name="etape_description">Step %1$d: %2$s</string>
+    <string name="aucun_ingredient">No ingredients listed.</string>
+    <string name="aucune_etape">No steps listed.</string>
+    <!-- Niveau de difficulté sur 5, suivi de son libellé -->
+    <string name="difficulte_valeur">Difficulty: %1$d/5 (%2$s)</string>
+    <string-array name="niveaux_difficulte">
+        <item>very easy</item>
+        <item>easy</item>
+        <item>medium</item>
+        <item>hard</item>
+        <item>expert</item>
+    </string-array>
+
+    <!-- Formulaire d'ajout -->
+    <string name="titre_ajout">New recipe</string>
+    <string name="nom_recette">Recipe name</string>
+    <string name="champ_obligatoire">* Required</string>
+    <string name="erreur_nom_obligatoire">The name can\'t be blank</string>
+    <!-- Valeur toujours grande (constante) : un pluriel est inutile -->
+    <string name="erreur_nom_trop_long" tools:ignore="PluralsCandidate">%1$d characters maximum</string>
+    <string name="duree">Duration</string>
+    <string name="unite_minutes">min</string>
+    <string name="aide_duree">* Required, in minutes (1 to %1$d)</string>
+    <string name="erreur_duree_non_numerique">Enter a whole number of minutes</string>
+    <string name="erreur_duree_hors_limites" tools:ignore="PluralsCandidate">Between 1 and %1$d minutes</string>
+    <string name="categorie">Category</string>
+    <string name="ingredients_saisie">Ingredients (one per line)</string>
+    <string name="etapes_saisie">Steps (one per line)</string>
+    <string name="enregistrer">Save</string>
+</resources>

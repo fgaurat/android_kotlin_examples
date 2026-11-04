@@ -1,0 +1,57 @@
+# Requêtes de test pour JSON Server (npx json-server db.json → http://localhost:3000)
+# Client HTTP intégré d'Android Studio / IntelliJ : cliquer sur ▶ à côté de chaque requête.
+# Les requêtes d'écriture modifient db.json : comparez avec db.original.json.
+
+### Lister toutes les tâches (200 éléments)
+GET http://localhost:3000/todos
+
+### Lire la tâche 1 : remarquez "id": "1", une CHAÎNE avec JSON Server 1.x
+GET http://localhost:3000/todos/1
+
+### Filtres combinés (ET) : tâches non terminées de l'utilisateur 1
+GET http://localhost:3000/todos?userId=1&completed=false
+
+### Recherche dans le titre
+GET http://localhost:3000/todos?title:contains=dolor
+
+### Tri décroissant sur l'id (attention : tri de CHAÎNES, "9" avant "20")
+GET http://localhost:3000/todos?_sort=-id&userId=1
+
+### Pagination : une enveloppe {first, prev, next, last, pages, items, data}, pas un tableau
+GET http://localhost:3000/todos?_page=2&_per_page=10
+
+### Piège : _limit n'existe plus en 1.x, il est pris pour un filtre → []
+GET http://localhost:3000/todos?_limit=5
+
+### Un utilisateur (address, phone, company… seront ignorés côté Android)
+GET http://localhost:3000/users/1
+
+### Créer une tâche : 201 + la tâche avec un id généré ("yWeeNCMABkQ"…)
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{ "userId": 1, "title": "Préparer le TP", "completed": false }
+
+> {% client.global.set("id", response.body.id); %}
+
+### Marquer la tâche créée comme terminée (PATCH : seuls les champs envoyés changent)
+# Sans le script ci-dessus, remplacez {{id}} par l'id renvoyé par le POST.
+PATCH http://localhost:3000/todos/{{id}}
+Content-Type: application/json
+
+{ "completed": true }
+
+### Remplacer entièrement la tâche (PUT : corps complet, sans id)
+PUT http://localhost:3000/todos/{{id}}
+Content-Type: application/json
+
+{ "userId": 1, "title": "Préparer le TP (relu)", "completed": true }
+
+### Supprimer la tâche créée : 200 + la tâche supprimée
+DELETE http://localhost:3000/todos/{{id}}
+
+### Tâche inexistante : 404 {"error": "Not Found"}
+GET http://localhost:3000/todos/9999
+
+### Supprimer une tâche inexistante : 404
+DELETE http://localhost:3000/todos/9999

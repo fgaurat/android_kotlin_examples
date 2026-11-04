@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Compteur</string>
+
+    <!-- Étapes 1 à 4 : un seul compteur -->
+    <string name="compteur_valeur">Compteur : %1$d</string>
+    <string name="ajouter_un">+1</string>
+
+    <!-- Étapes 5 à 8 : composable Compteur et tableau de score -->
+    <string name="compteur">Compteur</string>
+    <string name="equipe_a">Équipe A</string>
+    <string name="equipe_b">Équipe B</string>
+    <string name="ajouter_point">Ajouter un point : %1$s</string>
+    <string name="retirer_point">Retirer un point : %1$s</string>
+    <string name="total">Total : %1$d</string>
+    <string name="meneur_a">L\'équipe A mène</string>
+    <string name="meneur_b">L\'équipe B mène</string>
+    <string name="egalite">Égalité</string>
+    <string name="reinitialiser">Réinitialiser</string>
+
+    <!-- Onglets de démonstration -->
+    <string name="etape1_titre">1 · var</string>
+    <string name="etape1_explication">Une simple variable : la valeur change (voir Logcat, tag Compteur), mais Compose ne l\'observe pas. L\'écran reste à 0.</string>
+    <string name="etape2_titre">2 · sans remember</string>
+    <string name="etape2_explication">mutableStateOf est observé, mais recréé à 0 à chaque recomposition. Le lint Compose signale l\'erreur.</string>
+    <string name="etape3_titre">3 · remember</string>
+    <string name="etape3_explication">remember conserve l\'état entre recompositions… mais tournez l\'écran : il repart de 0.</string>
+    <string name="etape4_titre">4 · rememberSaveable</string>
+    <string name="etape4_explication">rememberSaveable survit à la rotation et à la mort du processus.</string>
+    <string name="etape5_titre">5 · state hoisting</string>
+    <string name="etape5_explication">Compteur est sans état : il reçoit la valeur et remonte les événements. CompteurRoute possède l\'état.</string>
+    <string name="etape6_titre">6 · état partagé</string>
+    <string name="etape6_explication">Deux compteurs, un total : l\'état est remonté au plus petit ancêtre commun, ScoreRoute.</string>
+    <string name="etape7_titre">7 · state holder</string>
+    <string name="etape7_explication">La logique quitte le composable pour une classe ScoreState, mémorisée par rememberScoreState().</string>
+    <string name="etape8_titre">8 · ViewModel</string>
+    <string name="etape8_explication">L\'état vit dans ScoreViewModel (StateFlow + SavedStateHandle) ; l\'écran le lit avec collectAsStateWithLifecycle().</string>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Traduction française : mêmes clés que values/, placeholders inchangés, apostrophes échappées,
+     espace insécable ( ) avant les deux-points. -->
+<resources>
+    <string name="app_name">Fiche produit</string>
+
+    <string name="onglet_accueil">Accueil</string>
+    <string name="onglet_recherche">Recherche</string>
+    <string name="onglet_panier">Panier</string>
+    <string name="onglet_profil">Profil</string>
+    <!-- « one » couvre 0 et 1 en français ; « many » sert aux grands nombres -->
+    <plurals name="articles_panier">
+        <item quantity="one">%d article dans le panier</item>
+        <item quantity="many">%d d\'articles dans le panier</item>
+        <item quantity="other">%d articles dans le panier</item>
+    </plurals>
+
+    <string name="retour">Retour</string>
+    <string name="partager">Partager</string>
+    <string name="partager_via">Partager via</string>
+    <string name="texte_partage">Regarde ça : %1$s à %2$s</string>
+
+    <string name="photo_produit">Photo du produit %1$s, coloris %2$s</string>
+    <string name="prix_barre_description">Au lieu de %1$s</string>
+    <string name="note_description">Noté %1$s sur 5, %2$s</string>
+    <string name="aucun_avis">Aucun avis pour l\'instant</string>
+    <plurals name="nb_avis">
+        <item quantity="one">%d avis</item>
+        <item quantity="many">%d d\'avis</item>
+        <item quantity="other">%d avis</item>
+    </plurals>
+    <string name="taille">Taille</string>
+    <string name="taille_choisie">Taille : %1$s</string>
+    <string name="choisir_taille">Choisissez une taille</string>
+    <string name="taille_epuisee">%1$s épuisée</string>
+    <string name="couleur_choisie">Coloris : %1$s</string>
+    <string name="couleur_bleu_marine">Bleu marine</string>
+    <string name="couleur_blanc_casse">Blanc cassé</string>
+    <string name="couleur_vert_sauge">Vert sauge</string>
+    <string name="couleur_terracotta">Terracotta</string>
+    <string name="description">Description</string>
+    <string name="deplier">déplier</string>
+    <string name="replier">replier</string>
+    <string name="etat_deplie">Déplié</string>
+    <string name="etat_replie">Replié</string>
+    <string name="ajouter_au_panier">Ajouter au panier</string>
+    <string name="ajoute_au_panier">%1$s (taille %2$s) ajouté au panier</string>
+    <string name="voir_panier">Voir le panier</string>
+
+    <string name="panier_vide">Votre panier est vide. Trouvez l\'article qui vous plaît dans l\'onglet Accueil.</string>
+    <string name="details_ligne">Taille %1$s · %2$s</string>
+    <string name="quantite_description">Quantité : %1$d</string>
+    <string name="diminuer_quantite">Diminuer la quantité de %1$s</string>
+    <string name="augmenter_quantite">Augmenter la quantité de %1$s</string>
+    <string name="total">Total : %1$s</string>
+    <string name="commander">Commander</string>
+    <string name="commande_simulee">Merci ! Votre commande est passée (démonstration).</string>
+
+    <string name="a_venir">Cette rubrique n\'est pas encore disponible.</string>
+</resources>

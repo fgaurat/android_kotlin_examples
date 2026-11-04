@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MvvmSujets">
+
+        <!-- Décommenter le sujet à exécuter, et laisser les autres en commentaire. -->
+
+        <!-- Sujet 1 : Pourquoi une architecture ? (sans MVVM) -->
+        <activity android:name=".sujet1.MainActivity1" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Sujet 2 : MVVM : premier ViewModel -->
+        <!--
+        <activity android:name=".sujet2.MainActivity2" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <!-- Sujet 3 : Flux unidirectionnel et état d'écran -->
+        <!--
+        <activity android:name=".sujet3.MainActivity3" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <!-- Sujet 4 : Isoler les couches (4 fichiers) -->
+        <!--
+        <activity android:name=".sujet4.MainActivity4" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <!-- Sujet 5 : Flow froid et flow chaud -->
+        <!--
+        <activity android:name=".sujet5.MainActivity5" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <!-- Sujet 6 : Opérateurs de Flow : recherche réactive -->
+        <!--
+        <activity android:name=".sujet6.MainActivity6" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <!-- Sujet 7 : LiveData -->
+        <!--
+        <activity android:name=".sujet7.MainActivity7" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <!-- Sujet 8 : Cycle de vie de l'Activity et du ViewModel -->
+        <!--
+        <activity android:name=".sujet8.MainActivity8" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <!-- Sujet 9 : SavedStateHandle et mort du processus -->
+        <!--
+        <activity android:name=".sujet9.MainActivity9" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <!-- Sujet 10 : Cycle de vie côté Compose -->
+        <!--
+        <activity android:name=".sujet10.MainActivity10" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+    </application>
+
+</manifest>

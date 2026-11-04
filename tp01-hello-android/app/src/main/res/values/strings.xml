@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HelloAndroid</string>
+    <!-- Étape 3 : texte affiché par Greeting via stringResource(R.string.welcome) -->
+    <string name="welcome">Bienvenue sur Android</string>
+    <!-- %1$s est remplacé par le paramètre name de Greeting -->
+    <string name="greeting_name">Bonjour %1$s !</string>
+</resources>

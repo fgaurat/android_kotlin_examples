@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Étape 2 : permission d'exécution depuis Android 13 (API 33) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Étape 1 : classe Application qui crée le canal « rappels » -->
+    <application
+        android:name=".HydratationApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hydratation">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Hydratation"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Étape 6 : action « C'est fait ». Broadcast EXPLICITE (la classe est nommée
+             dans le PendingIntent) : autorisé malgré les restrictions d'Android 8.
+             exported="false" : aucune autre application ne peut l'appeler. -->
+        <receiver
+            android:name=".notifications.CestFaitReceiver"
+            android:exported="false" />
+    </application>
+
+</manifest>

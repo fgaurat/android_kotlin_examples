@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Flavor pro : repère doré (la ressource du flavor gagne sur celle de main) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFC107"
+        android:fillType="evenOdd"
+        android:pathData="M54,28C44.06,28 36,36.06 36,46C36,59.5 54,78 54,78C54,78 72,59.5 72,46C72,36.06 63.94,28 54,28ZM54,52.5C50.41,52.5 47.5,49.59 47.5,46C47.5,42.41 50.41,39.5 54,39.5C57.59,39.5 60.5,42.41 60.5,46C60.5,49.59 57.59,52.5 54,52.5Z" />
+</vector>

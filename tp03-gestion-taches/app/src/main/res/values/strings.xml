@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Gestion de tâches</string>
+
+    <!-- Cartes -->
+    <string name="titre_resume">Résumé</string>
+    <string name="utilisateur_plus_actif">Utilisateur le plus actif : %1$d</string>
+    <string name="titre_plus_long">Titre le plus long : « %1$s » (n° %2$s)</string>
+    <string name="nombre_par_utilisateur">Tâches par utilisateur : %1$s</string>
+    <string name="aucune_donnee">—</string>
+
+    <string name="titre_recherches">Recherches avec filtrer</string>
+    <string name="recherche_lambda">filtrer { it.utilisateurId == 2 }</string>
+    <string name="recherche_reference">filtrer(::estAFaire)</string>
+
+    <string name="titre_sequence">Sequence : 100 000 tâches</string>
+    <string name="sequence_duree">Calculé en %1$d ms</string>
+    <string name="sequence_premieres">5 premières à faire de l\'utilisateur 4 : %1$s</string>
+
+    <string name="titre_ajout">Ajouter une tâche</string>
+    <string name="champ_titre">Titre</string>
+    <string name="utilisateur_court">Utilisateur %1$d</string>
+    <string name="bouton_ajouter">Ajouter</string>
+
+    <!-- Liste -->
+    <string name="titre_taches">Tâches</string>
+    <string name="filtre_toutes">Toutes</string>
+    <string name="filtre_a_faire">À faire</string>
+    <string name="filtre_terminees">Terminées</string>
+    <string name="aucune_tache">Aucune tâche pour ce filtre</string>
+    <plurals name="entete_utilisateur">
+        <item quantity="one">Utilisateur %1$d · %2$d tâche</item>
+        <item quantity="many">Utilisateur %1$d · %2$d tâches</item>
+        <item quantity="other">Utilisateur %1$d · %2$d tâches</item>
+    </plurals>
+    <string name="bouton_terminer">Terminer</string>
+    <string name="bouton_supprimer">Supprimer</string>
+    <string name="bouton_id_inconnu">Id inconnu</string>
+    <string name="bouton_reinitialiser">Réinitialiser</string>
+
+    <!-- Messages (étape 5 : un par cas du when) -->
+    <string name="message_succes">« %1$s » est terminée</string>
+    <string name="message_deja_terminee">Cette tâche est déjà terminée</string>
+    <string name="message_introuvable">Tâche introuvable</string>
+    <string name="message_ajout">« %1$s » ajoutée pour l\'utilisateur %2$d</string>
+    <string name="message_suppression">« %1$s » supprimée</string>
+    <string name="message_reinitialisation">Tâches réinitialisées</string>
+</resources>

@@ -1,0 +1,6 @@
+# Fichiers à ne jamais transmettre aux assistants IA (Gemini dans Android Studio…)
+local.properties
+keystore/
+*.jks
+*.keystore
+*.p12
