@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Permission normale : accordée à l'installation, sans demande à l'exécution -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- networkSecurityConfig : autorise le HTTP en clair vers JSON Server (10.0.2.2, localhost) -->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TodosSplash">
+
+        <!-- Décommenter l'étape à exécuter, et laisser les autres en commentaire.
+             android:theme : le thème de DÉMARRAGE (splash), remplacé ensuite par postSplashScreenTheme. -->
+
+        <!-- Étape 1 : Le splash screen minimal -->
+        <activity android:name=".sujet1.MainActivity1" android:exported="true"
+            android:theme="@style/Theme.TodosSplash.Demarrage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Étape 2 : Garder le splash pendant le chargement des données -->
+        <!--
+        <activity android:name=".sujet2.MainActivity2" android:exported="true"
+            android:theme="@style/Theme.TodosSplash.Demarrage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <!-- Étape 3 : Délai maximum et animation de sortie -->
+        <!--
+        <activity android:name=".sujet3.MainActivity3" android:exported="true"
+            android:theme="@style/Theme.TodosSplash.Demarrage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+
+    </application>
+
+</manifest>

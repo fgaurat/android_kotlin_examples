@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Depuis Android 9 (API 28), le trafic HTTP en clair est bloqué.
+    JSON Server parle HTTP : on autorise le clair UNIQUEMENT pour le poste de dev.
+    Tout autre domaine reste en HTTPS obligatoire.
+-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Émulateur : 10.0.2.2 = localhost de la machine hôte -->
+        <domain includeSubdomains="false">10.0.2.2</domain>
+        <!-- Appareil USB avec adb reverse tcp:3000 tcp:3000 -->
+        <domain includeSubdomains="false">localhost</domain>
+    </domain-config>
+</network-security-config>

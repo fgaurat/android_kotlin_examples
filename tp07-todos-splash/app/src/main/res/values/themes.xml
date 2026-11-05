@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Thème de l'application, appliqué APRÈS le splash screen -->
+    <style name="Theme.TodosSplash" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <!-- Thème de démarrage : à mettre sur l'activité dans le manifest -->
+    <style name="Theme.TodosSplash.Demarrage" parent="Theme.SplashScreen">
+        <!-- Couleur de fond du splash -->
+        <item name="windowSplashScreenBackground">@color/splash_fond</item>
+        <!-- Icône centrale (vector drawable, 108 dp avec une zone utile de 72 dp) -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <!-- Thème à appliquer quand le splash disparaît : obligatoire -->
+        <item name="postSplashScreenTheme">@style/Theme.TodosSplash</item>
+    </style>
+</resources>
